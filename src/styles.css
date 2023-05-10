@@ -11,6 +11,11 @@ body {
     color: var(--primary-dark)
 }
 
+body#home {
+  background-color: var(--primary-dark);
+  color: var(--primary-dark)
+}
+
 a, a:hover {
   color: inherit;
 }
