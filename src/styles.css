@@ -16,6 +16,11 @@ body#home {
   color: var(--primary-dark)
 }
 
+div#home-wrapper {
+  background-color: var(--primary-light);
+  padding-bottom: 1rem;
+}
+
 a, a:hover {
   color: inherit;
 }
@@ -507,6 +512,10 @@ div#download div.grid-x div.cell {
 
 /* Small Screen */
 @media screen and (max-width: 40rem) {
+  button {
+    padding: 1rem 3rem;
+  }
+
   /* sticky nav */
   div.title-bar-right a.button {
     font-size: .8rem;
@@ -519,7 +528,7 @@ div#download div.grid-x div.cell {
   }
 
   /* Download Page */
-div#download div.grid-container {
-  max-width: 90%;
-}
+  div#download div.grid-container {
+    max-width: 90%;
+  }
 }
