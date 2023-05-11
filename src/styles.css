@@ -139,13 +139,14 @@ div.section img {
 }
 
 div.section div.grid-margin-y div.cell {
-  margin: 1rem 0rem;
+  margin: 1rem inherit;
 }
 
 /* input styles */
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
-    border-color: var(--primary-dark)
+    border-color: var(--primary-dark);
+    border-radius: 5px;
 }
 
 input[type="email"] {
@@ -162,6 +163,7 @@ input[type="email"] {
   color: var(--primary-light);
   border: var(--primary) 1px solid;
   margin: 0.5rem 0 0.5rem 0;
+  border-radius: 30px;
 }
 
 .button:hover, .button:focus {
@@ -339,7 +341,7 @@ div#faq li.accordion-item a {
   border: none;
   font-size: inherit;
   color: var(--primary-dark);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 div#faq li.accordion-item a.accordion-title {
@@ -394,6 +396,10 @@ div#social-media {
   text-align: center;
 }
 
+div#success-social-media {
+  padding: 3rem 0rem;
+}
+
 div#community-intro h2{
   padding-bottom: 1rem;
 }
@@ -427,18 +433,20 @@ div#sign-up input::placeholder {
 }
 
 div#sign-up button#email-form {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0rem;
+  width: 100%;
   height: 42px;
 }
 
 /* Download Page */
 div#download.section {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
+
 div#download div.grid-container {
-  max-width: 50%;
+  max-width: 650px;
+  padding: 1rem;
 }
 
 div#download input::placeholder {
@@ -447,14 +455,14 @@ div#download input::placeholder {
 
 div#download div#download-buttons button {
   width: 100%;
-  height: 100px;
+  height: 60px;
   padding: 0;
   text-align: center;
 }
 
 div#download div.grid-x div.cell {
   height: 100px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Medium Screen */
@@ -502,33 +510,34 @@ div#download div.grid-x div.cell {
       max-width: 90%;
     }
 
-    /* Download Page */
-    div#download div.grid-container {
-      max-width: 70%;
+    /* Sign up */
+    div#sign-up div.grid-container {
+      max-width: 100%;
     }
-
-
 }
 
 /* Small Screen */
 @media screen and (max-width: 40rem) {
-  button {
+  .button {
     padding: 1rem 3rem;
   }
-
   /* sticky nav */
   div.title-bar-right a.button {
     font-size: .8rem;
     padding: .85rem 1rem;
   }  
   
-  form#supported-apps input {
-    max-width: 100%;
-    margin-bottom: 1rem;
+  /* supported apps */
+  div#supported-apps img.supported-apps-icons {
+    max-height: 50px;
   }
 
-  /* Download Page */
-  div#download div.grid-container {
-    max-width: 90%;
+  /* Sign up */
+  div#sign-up div.grid-container {
+    max-width: 100%;
+  }
+
+  div#home-footer {
+    padding-bottom: 3rem;
   }
 }

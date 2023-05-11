@@ -6,7 +6,7 @@
   <title>Remembered - Download</title>
   <link rel="icon" type="image/png" href="assets/app-icon-1x.png" />
   <meta name="digital memories" content="HTML, CSS, JavaScript">
-  <meta name="Remembered app - Own all your digital memories in one place, forever" content="Remembered is an app that allows you to keep & view your memories across major chat apps in one place">
+  <meta name="Remembered app - keep digital memories forever" content="Remembered is an app that allows you to keep & view your memories across major chat apps in one place">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -59,51 +59,59 @@
   </div>
 
   <!-- SECTION: DOWNLOAD -->
-  <div class="grid-y grid-margin-y section" id="download">
-    <div class="cell" style="margin-bottom: 3rem;">
-      <h1><strong>Remembered for Desktop</strong></h1>
-      v0.1.5-beta (YYYY-MM-DD)
+  <div class="grid-y grid-margin-y" style="text-align: center;">
+    <div class=" cell">
+      <h1>Your Download Has Started ❤️</h1>
+      Don't see it? Check if your browser is blocking any pop-ups!
     </div>
+  </div>
+
+  <!-- SECTION: SOCIAL MEDIA -->
+  <div class="grid-y" id="success-social-media" style="text-align: center;">
     <div class="cell">
       <div class="grid-container">
-        <form name="download-signup" method="POST" action="./success" enctype="application/x-www-form-urlencoded" netlify>
-          <div class="grid-y align-middle grid-margin-y">
-            <div class="cell">
-              <input type="email" placeholder="Your email address..." name="email">
-              <div style="text-align: left;">
-                <label class="container">Sign up for email updates
-                  <input type="checkbox" name="opt-in">
-                  <span class="checkmark"></span>
-                </label>
+        <div class="cell">
+          <div class="grid-y grid-margin-y align-middle">
+            <div class="cell" id="community-intro">
+              <h2>Give Feedback or Get Support</h2>
+            </div>
+            <div class="cell" id="community-websites">
+              <div class="grid-x grid-margin-x">
+                <div class="cell medium-4 community-link">
+                  <a href="https://twitter.com/RememberedApp" target="_blank"><img src="./assets/social_icons/Twitter-icon.png" class="social-media-icon" /></a>
+                  <h3>@RememberedApp on Twitter</h3>
+                  <p>Tweet some awesome memories!</p>
+                </div>
+                <div class="cell medium-4 community-link">
+                  <a href="https://www.reddit.com/r/RememberedApp/" target="_blank"><img src="./assets/social_icons/reddit-logo.png" class="social-media-icon" /></a>
+                  <h3>r/RememberedApp on Reddit</h3>
+                  <p>Join the official subreddit for Remembered!</p>
+                </div>
+                <div class="cell medium-4 community-link">
+                  <a href="https://www.facebook.com/profile.php?id=100092335401422" target="_blank"><img src="./assets/social_icons/Facebook-logo.png" class="social-media-icon" /></a>
+                  <h3>Remembered on Facebook</h3>
+                  <p>Post your thoughts on our Facebook page!</p>
+                </div>
               </div>
             </div>
-            <div class="cell" id="download-buttons">
-              <div class="grid-x grid-margin-x align-middle">
-                <div class="cell">
-                  <button id="mac-intel-download" type="submit" class="button light-button">Download (MacOS Intel)</button>
-                </div>
-                <div class="cell">
-                  <button id="mac-as-download" type="submit" class="button light-button">Download (MacOS Apple Silicon)</button>
-                </div>
-                <div class="cell">
-                  <button id="windows-download" type="submit" class="button light-button">Dwownload (Windows)</button>
-                </div>
-              </div>
+            <div class="cell">
+              <h3 style="font-weight: bold;">Or reach us by email</h3>
+              <h4>
+                <a href="mailto:remembered.app@gmail.com" style="font-size: 1.25rem;"><i class="fa-solid fa-envelope" style="color: #754BA3;"></i> remembered.app@gmail.com</a>
+              </h4>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- SECTION: FOOTER -->
-  <div class="grid-y section" id="footer">
+  <div class="grid-y" id="footer">
     <div class="cell">
       <div class="grid-container">
         <div class="grid-y">
-          <div class="cell">
-            <div class="cell">© 2023 Lux Ex Machina | <a href="mailto:remembered.app@gmail.com"><i class="fa-solid fa-envelope" style="color: #754BA3;"></i> Contact Us</a>
-            </div>
+          <div class="cell">© 2023 Lux Ex Machina | <a href="mailto:remembered.app@gmail.com"><i class="fa-solid fa-envelope" style="color: #754BA3;"></i> Contact Us</a>
           </div>
         </div>
       </div>
@@ -120,24 +128,6 @@
   <script>
     /* initialize all foundation plugins */
     $(document).foundation();
-    $(document).ready(function () {
-      var intel_url = "./assets/app_releases/Remembered-0.1.4-alpha-x64.dmg";
-      var apple_url = "./assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg";
-      var windows_url = "./assets/app_releases/Remembered-0.1.1-alpha-windows.exe";
-
-      $('#mac-intel-download').click(function() {
-        var w = window.open(intel_url, '_blank');
-        w.focus();
-      });
-      $('#mac-as-download').click(function() {
-        var w = window.open(apple_url, '_blank');
-        w.focus();
-      });
-      $('#windows-download').click(function() {
-        var w = window.open(windows_url, '_blank');
-        w.focus();
-      });
-    })
   </script>
 
 </body>
